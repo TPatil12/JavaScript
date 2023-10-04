@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Constructors</title>
+</head>
+<body>
+    <script>
+        let Person = {
+            name:"sumit",
+            address:"kop",
+            hobby :"cricket",
+            city:"solapur",
+            age:25
+        }
+        console.log(peraon);
+
+        let person1 = {
+            name:"sumit",
+            address:"kop",
+            hobby :"cricket",
+            city:"solapur",
+            age:25
+        }
+        console.log(person1);
+
+        function Person(first,last,age,add,city,eye)
+        {
+            this.firstname = first;
+            this.lastname = last;
+            this.age = age;
+            this.address = add;
+            this.city = city;
+            this.eyecolor  = eye;
+        }
+
+        let x = new Person("rahul","desai",25,"kop","solapur","skyblue");
+        console.log(x);
+        let y = new Person("amol","patil",26,"sangali","solapur","sky");
+        console.log(y);
+
+        x.nationality = "indian";
+        console.log(x);
+        y.color = "red";
+        console.log(y);
+
+        y.fullname = function(){
+            return this.firstname + " " + this.lastname;
+        }
+
+        console.log(y.fullname());
+
+
+        x.name = function()
+        {
+            return this.firstname + " " + this.age;
+        }
+
+        console.log(x.name());
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+    <script>
+        // let state1 = "Maharashtra";
+        // let state2 = 'Karanataka';
+
+        // document.getElementById("demo").innerHTML = state1 + " " + state2;
+
+        // let t1 = "Good Morning";
+        // let t2 = "Good Afternoon 'Tushar'";
+        // let t3 = 'Good Evening "Sumit"';
+
+        // document.getElementById("demo").innerHTML = t1 + "<br>" + t2 + "<br>" + t3 ;
+
+        // let person = "Rohit Gurunath Sharma"
+        // document.getElementById("demo").innerHTML = person.length;
+
+
+        // let text = "I am nobody. Nobody is \"perfect\". I am perfect";
+        // document.getElementById("demo").innerHTML = text;
+
+        // let txt = 'it\'s Alright.';
+        // document.getElementById("demo").innerHTML = txt;
+
+
+        // let sen = "The character \\ is called backslash.";
+        // document.getElementById("demo").innerHTML = sen; 
+
+
+        // let fruits = "Mango Apple Banana";
+        // let part = fruits.slice(5,13);
+        // document.getElementById("demo").innerHTML = part;
+
+        // String slice()
+        // let fruits2 = "Mango Apple Banana";
+        // let part2 = fruits.slice(5);
+        // let part2 = fruits2.slice(-10);
+        // let part2 = fruits2.slice(-12,-6);
+        // document.getElementById("demo").innerHTML = part2;
+
+        // String substring()
+        // let person = "Tushar Sumit Prathmesh";
+        // let name = person.substring(4,13);
+        // document.getElementById("demo").innerHTML = name;
+
+
+        // String substr()
+        // The difference is that the second parameter specifies the length of the extracted part.
+        // let person2 = "Tushar Sumit Prathmesh";
+        // let name2 = person2.substr(4,13);
+        // document.getElementById("demo").innerHTML = name2;
+
+        // let person3 = "Tushar Sumit Prathmesh";
+        // let name3 = person3.substr(6);
+        // let name4 = person3.substr(-4);
+        // document.getElementById("demo").innerHTML = name3;
+
+        // Replacing String Content
+        // let place = "Please Visit Mahabaleshwar";
+        // let tp = place.replace("Mahabaleshwar", "Rankala");
+        // document.write(tp);
+
+        // String ReplaceAll()
+
+        // let day = "Today Is Monday. Tomorrow Is Monday. The Day After Is Monday."
+        // // day = day.replaceAll("Monday","Sunday");
+        // k = day.replaceAll("monday","sunday");
+        // document.write(k);
+
+        // String toUpperCase() ,  String toLowerCase()
+        // let p = "I Love Playing Cricket.";  
+        // M = p.toUpperCase();
+        // M = p.toLowerCase();
+        // document.write(M);
+
+        // String concat()
+
+        // let tp1 = "Tushar";
+        // let tp2 = "Patil";
+        // let tp3 = tp1.concat(" ",tp2);
+        // document.write(tp3);
+        
+
+        // String trim()
+        // let tp1 = "     Tushar Patil     ";
+        // let tp2 = tp1.trim();
+        // document.write(tp2);
+
+        // String trimStart()
+        // let tp1 = "     Tushar Patil     ";
+        // let tp2 = tp1.trimStart();
+        // document.write(tp2);
+
+        // String trimEnd()
+        // let tp1 = "     Tushar Patil     ";
+        // let tp2 = tp1.trimEnd();
+        // document.write(tp2);
+
+        // String padStart()
+        // let c = "4";
+        // let d = c.padStart(4,"x");
+        // document.getElementById("demo").innerHTML = d;
+
+        // // String padEnd()
+        // let c = "5";
+        // let d = c.padEnd(4,0);
+        // document.getElementById("demo").innerHTML = d;
+
+        // // String charAt()
+        // let l = "Good Morning"
+        // let msg = l.charAt(3);
+        // console.log(msg);
+
+        // // String charAt()
+        // let l = "Good Morning"
+        // let msg = l.charCodeAt(3);
+        // console.log(msg);
+
+        // String charAt()
+        let l = "a,b,c,d,e,f,g,h";
+        const msg = l.split(",");
+        document.write(msg[1]);
+    </script>   
+
+</body>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEYBOARD EVENTS</title>
+</head>
+<body>
+    <!-- KEYBOARD EVENTS -->
+
+    <p id="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, consectetur.</p>
+
+    <!-- ON KEY UP -->
+    <!-- the user releases a key -->
+    <button onkeyup="tp1()">OnKeyUp</button>
+
+    <!-- ON KEY DOWN -->
+    <!-- The user presses a key -->
+    <button onkeydown="tp2()">OnKeyDown</button>
+
+    <!-- ON KEY PRESS -->
+    <!-- The user presses a key -->
+    <button onkeypress="tp3()">OnKeyPress</button>
+
+
+    <script>
+        function tp1(){
+            document.getElementById("demo").style.backgroundColor = "yellow"; 
+        }
+
+
+        function tp2(){
+            document.getElementById("demo").style.color = "red"; 
+        }
+
+
+        function tp3(){
+            document.getElementById("demo").style.fontFamily = "cursive"; 
+        }
+    </script>
+
+</body>
+</html>

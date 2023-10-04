@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">This Is Div</div>
+    <span id="fire">This Is Span</span><br>
+    <input type="text" id="text"><br><br>
+    <button onclick="changemsg()">Click</button>
+
+    <script>
+        function changemsg(){
+            document.getElementById("demo").innerHTML= "<b><h1><i>I Am Div</i></h1></b>";
+            document.getElementById("fire").innerHTML ="Hello Sumit How Are You";
+            document.getElementById("text").value ="Tushar Patil";
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+
+<body>
+    <script>
+        // .............JSON OBJECT...........
+
+        // let person = {
+        //     "firstname": "Tushar",
+        //     "lastname": "patil",
+        //     "hobby": {
+        //         "reading": "False",
+        //         "gamig": "true",
+        //         "sports": "cricket"
+        //     },
+        //     "class":["HTML","CSS","JAVASCRIPT"]
+        // }
+
+         // .............Accessing JSON OBJECT...........
+
+        // console.log(person.firstname);
+        // console.log(person.hobby);
+        // console.log(person.hobby.sports);
+        // console.log(person.class[1]);
+
+
+        // .............Converting JSON to JavaScript Object............Sring to Object
+
+        // let person = '{"fname":"sumit","lname":"patil","age":24}';
+        // console.log(person);
+
+        // let obj = JSON.parse(person);
+
+        // console.log(obj.fname);
+
+
+        // ...........Converting JavaScript Object to JSON............Object to string
+
+
+        // let person = {"fname":"sumit","lname":"patil","age":24};
+        // // console.log(person);
+
+        // let obj = JSON.stringify(person);
+
+        // console.log(obj);
+
+
+        let person = '{"fname":"sumit","lname":"Patil","age":24}';
+        // console.log(person);
+
+        let obj = person.replace("sumit","Tushar");
+
+        console.log(obj);
+        
+        
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:aqua;
+        }
+
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <h1 id="demo2"></h1>
+    <script>
+        let cel,fah;
+        fah = prompt("enter fah value:");
+        cel = prompt("enter cel value:");
+         async function converter()
+         {
+            let x = new Promise(function(resolve){
+                console.log("fetching data please wait");
+
+                setInterval(() => {
+
+                    celsius = (fah-32) * 5/9;
+                    resolve(celsius)
+                    
+                }, 3000);
+            })
+
+
+            let y = new Promise(function(resolve){
+                console.log("fetching data please wait");
+
+                setInterval(() => {
+
+                    fahreint = (cel*9/5) + 32;
+                    resolve(fahreint)
+                    
+                }, 6000);
+            })
+
+            document.getElementById("demo").innerHTML = "the celsius value is:" + await x;
+            document.getElementById("demo2").innerHTML = "the fahreint value is:" + await y;
+         }
+
+         converter();
+    </script>
+</body>
+</html>

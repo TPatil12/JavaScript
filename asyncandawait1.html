@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       async function msg()
+        {
+
+            let prom = new Promise(function(resolve,reject){
+                setTimeout(() => {
+
+                    resolve("sanatan dharm ki jay");
+                    
+                }, 3000);
+            })
+
+            console.log(await prom);
+            document.write(await prom);
+            //alert(await prom);
+
+        }
+
+        msg();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // The Math Object
+        // ...............Math Properties (Constants).................
+
+        // let a = Math.PI;
+        // console.log(a);
+
+        // let b = Math.E;
+        // console.log(b);
+
+        // let c = Math.SQRT2;
+        // console.log(c);
+
+        // let d = Math.SQRT1_2;
+        // console.log(d);
+
+        // let e = Math.LN2;
+        // console.log(e);
+
+        // let f = Math.LN10;
+        // console.log(f);
+
+        // let g = Math.LOG2E;
+        // console.log(g);
+
+        // let h = Math.LOG10E;
+        // console.log(h);
+
+
+        // ..............Number to Integer..................
+
+
+        // Math.round(x) returns the nearest integer:.....
+        // let i = Math.round(4.6);
+        // console.log(i);
+
+        // Math.ceil(x) returns the value of x rounded up to its nearest integer:.......
+        // let j = Math.ceil(9.6546);
+        // console.log(j);
+
+        // Math.floor(x) returns the value of x rounded down to its nearest integer:.......
+        // let k = Math.floor(5.6546);
+        // console.log(k);
+
+        // Math.trunc(x) returns the integer part of x:........
+        // let l = Math.trunc(9.5456);
+        // console.log(l);
+
+        // Math.sign(x) returns if x is negative, null or positive:......
+        // let m = Math.sign(-4);
+        // console.log(m);
+
+        // let q = Math.sign(4);
+        // console.log(q);
+
+        // Math.pow(x, y) returns the value of x to the power of y:.....
+        // let n = Math.pow(2, 3);
+        // console.log(n);
+
+        // Math.sqrt(x) returns the square root of x:.....
+        // let o = Math.sqrt(64);
+        // console.log(o);
+
+        // Math.abs(x) returns the absolute (positive) value of x:.......
+        // let p = Math.abs(-2.546);
+        // console.log(p);
+
+        // Math.random() returns a random number between 0 (inclusive), and 1 (exclusive):.....
+        // let r = Math.random();
+        // console.log(r);
+
+        // Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments:......
+        // let s = Math.max(45,46,871,357,84,184,1,54,);
+        // console.log(s);
+
+        // let t = Math.min(45,46,871,357,84,184,1,54,);
+        // console.log(t);
+
+        // Math.log(x) returns the natural logarithm of x......
+        // let u = Math.log(1);
+        // console.log(u);
+
+        // let v = Math.log(2);
+        // console.log(v);
+
+        // let w = Math.log(3);
+        // console.log(w);
+
+        // Math.log2(x) returns the base 2 logarithm of x......
+        // let x = Math.log2(8);
+        // console.log(x);
+
+        // Math.log10(x) returns the base 10 logarithm of x......
+        // let y = Math.log10(1000);
+        // console.log(y);
+
+
+        // Math.random() used with Math.floor() can be used to return random integers......
+        // let z = Math.floor(Math.random() * 10);
+        // console.log(z);
+
+        // let z1 = Math.floor(Math.random() * 11);
+        // console.log(z1);
+
+        // let z2 = Math.floor(Math.random() * 100);
+        // console.log(z2);
+
+        // let z3 = Math.floor(Math.random() * 101);
+        // console.log(z3);
+
+        // let z4 = Math.floor(Math.random() * 10) + 1;
+        // console.log(z4);
+
+        // let z5 = Math.floor(Math.random() * 100) + 1;
+        // console.log(z5);
+
+
+
+        // ....................The Boolean() Function........................
+
+
+        // let a = Boolean(10<9);
+        // console.log(a);
+
+        // JavaScript Booleans as Objects..........
+
+        // let b = false;
+        // let c = new Boolean(false);
+        // console.log(typeof(b) + " " + typeof(c));
+
+
+        // let d = false;
+        // let e = new Boolean(false);
+        // console.log(d == e);
+
+        // let f = false;
+        // let g = new Boolean(false);
+        // console.log(f === g);
+
+        // let h = new Boolean(false);
+        // let i = new Boolean(false);
+        // console.log(h == i);
+
+        // let j = new Boolean(false);
+        // let k = new Boolean(false);
+        // console.log(j === k);
+
+
+
+        // .....................Comparison Operators...................
+
+        // let a = 7;
+        // console.log(a == 5);
+
+        // let a2 = 7;
+        // console.log(a2 == 7);
+
+        // let a3 = 7;
+        // console.log(a3 == "7");
+
+
+        // let a4 = 7;
+        // console.log(a4 === 7);
+
+        // let a5 = 7;
+        // console.log(a5 === "7");
+
+
+        // let a6 = 7;
+        // console.log(a6 != 5);
+
+
+        // let a7 = 7;
+        // console.log(a7 !== 7);
+
+        // let a8 = 7;
+        // console.log(a8 !== "7");
+
+        // let a9 = 7;
+        // console.log(a9 !== 5);
+
+
+        // let b = 7;
+        // console.log(b > 5);
+
+        // let b2 = 7;
+        // console.log(b2 < 5);
+
+        // let b3 = 7;
+        // console.log(b3 >= 5);
+
+        // let b4 = 7;
+        // console.log(b4 <= 5);
+
+
+
+        // ....................Logical Operators....................
+
+
+        // let x = 8;
+        // let y = 5;
+        // console.log((x < 10 && y > 3) + " " + (x < 10 && y < 3));
+
+
+        // let a = 9;
+        // let b = 4;
+        // console.log((a == 5 || b == 5) + " " + (a == 9 || b == 0) + " " + (a == 0 || b == 4) + " " + (a == 9 || b == 3));
+
+
+        // let c = 8;
+        // let d = 5;
+        // console.log(!(c === d) + " " + !(c > d));
+
+
+
+        // .....................Conditional (Ternary) Operator.....................
+
+
+        let age;
+        age = prompt("Enter Your Age.....");
+        t = (age >= 18 )? "Elgible" : "Not Eligible";
+
+        window.alert(t + " " + "For Driving");
+
+
+    </script>
+</body>
+
+</html>

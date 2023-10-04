@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body {
+            background-color: cadetblue;
+        }
+
+        #x {
+            height: 500px;
+            width: 500px;
+            background-color: rgb(240, 240, 15);
+            position: relative;
+            border: 2px solid black;
+            margin-left: 500px;
+            border-radius: 26px;
+            border-style: dashed;
+        }
+
+        #a {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            position: absolute;
+            border-radius: 50px;
+        }
+
+        #b {
+            height: 50px;
+            width: 50px;
+            background-color: pink;
+            position: absolute;
+            right: 0;
+            border-radius: 50px;
+        }
+
+        #c {
+            height: 50px;
+            width: 50px;
+            background-color: skyblue;
+            position: absolute;
+            bottom: 0;
+            border-radius: 50px;
+        }
+
+        #d {
+            height: 50px;
+            width: 50px;
+            background-color: darkorange;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border-radius: 50px;
+        }
+
+        button {
+            margin-left: 670px;
+            font-size: 50px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+
+    <div id="x">
+        <div id="a"></div>
+        <div id="b"></div>
+        <div id="c"></div>
+        <div id="d"></div>
+    </div>
+    <br>
+
+    <button onclick="Start()">Click</button>
+
+    <script>
+        function Start() {
+            let target1 = document.getElementById("a");
+            pos = 0;
+            let t1 = setInterval(() => {
+
+                if (pos == 450) {
+                    clearInterval(t1);
+                }
+                else {
+                    pos++;
+                    target1.style.top = pos + "px";
+                    target1.style.left = pos + "px";
+                }
+            }, 10);
+
+            let target2 = document.getElementById("b");
+            pos = 0;
+            let t2 = setInterval(() => {
+
+                if (pos == 450) {
+                    clearInterval(t2);
+                }
+                else {
+                    pos++;
+                    target2.style.top = pos + "px";
+                    target2.style.right = pos + "px";
+                }
+            }, 10);
+
+            let target3 = document.getElementById("c");
+            pos = 0;
+            let t3 = setInterval(() => {
+
+                if (pos == 450) {
+                    clearInterval(t3);
+                }
+                else {
+                    pos++;
+                    target3.style.left = pos + "px";
+                    target3.style.bottom = pos + "px";
+                }
+            }, 10);
+
+            let target4 = document.getElementById("d");
+            pos = 0;
+            let t4 = setInterval(() => {
+
+                if (pos == 450) {
+                    clearInterval(t4);
+                }
+                else {
+                    pos++;
+                    target4.style.right = pos + "px";
+                    target4.style.bottom = pos + "px";
+                }
+            }, 10);
+
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let marks;
+        marks = prompt("Enter Marks : ");
+        function student() {
+            return new Promise(function (resolve, reject) {
+                console.log("Please Wait......");
+
+                setTimeout(() => {
+
+                    if (marks >= 75 && marks <= 100) {
+                        resolve("First Class With Distinction");
+                    }
+                    else if (marks >= 60 && marks <= 74) {
+                        resolve("First Class");
+                    }
+                    else if (marks >= 35 && marks <= 59) {
+                        resolve("Second Class");
+                    }
+                    else {
+                        reject("Fail");
+                    }
+
+                }, 2000);
+            })
+        }
+
+        let x = (Pass)=>{
+            console.log(Pass);
+        }
+
+        let y = (Fail)=>{
+            console.log(Fail);
+        }
+
+        student().then(x).catch(y);
+
+
+    </script>
+</body>
+
+</html>
